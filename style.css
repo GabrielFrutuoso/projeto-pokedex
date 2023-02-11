@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(180deg, white, rgba(0, 102, 255, 0.767));
+}
+
+.card{
+background-color: rgb(204, 7, 0);
+max-width: 60%;
+min-width: 250px;
+}
+
+.visor{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+    transition: all .3s ease-out;
+    overflow: hidden;
+    height: 0vh;
+}
+
+/*class que faz a pokedex abrir*/
+.aberto{
+    height: 75vh;
+}
+/*class que faz a pokedex abrir*/
+
+.show{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-image: url(images/pokefield.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    overflow: hidden;
+    transition: all .3s ease;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    
+}
+.gif{
+    position: absolute;
+    top: 35%;
+    height: 100px;
+    width: 100px;
+    
+}
+.abas{
+    height: 10px;
+    text-align: center;
+}
+
+.nome{
+    text-transform: capitalize;
+    position: absolute;
+    top: 7%;
+    font-size: 1.0em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: rgb(12, 12, 12);
+    
+}
+
+.pesquisar{
+    width: 200px;
+    height: 35px;
+    padding: 1%;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border: 1.5px solid black;
+    color: rgb(68, 68, 68);
+    font-size: 1.1em;
+}
+
+/*SELETOR DAS ABAS*/
+#cima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -2px 5px 5px rgba(0, 0, 0, 0.445), 0px 0px 16px rgba(0, 5, 10, 0.555);
+    height: 35px;
+    color: rgba(255, 255, 255, 0.788);
+    font-weight: 500;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#baixo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -2px 5px 5px rgba(0, 0, 0, 0.445), 0px 0px 16px rgba(0, 5, 10, 0.555);
+    height: 35px;
+    cursor: pointer;
+}
+/*SELETOR DAS ABAS*/
+
+
+.btn{
+    background-color: rgb(116, 5, 1);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.788);
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 2px;
+    border: none;
+}
+
+.pokesign{
+    color: rgba(255, 255, 255, 0.788);
+    font-weight: 500;
+    font-size: 1.1em;
+    background-color: rgb(116, 5, 1);
+    border-radius: 5px;
+    padding: 2px 7px;
+}

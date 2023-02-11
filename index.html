@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="images/pokefavicon.png">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="page">
+
+        <div class="card">
+
+            <div class="abas" id="cima" onclick="abrirFechar(this)">
+              <p class="mdi mdi-pokeball pokesign">Pokedex</p>
+            </div>
+
+            <div class="visor">
+                
+
+                <div class="show">
+                    <div class="nome"></div>
+
+                    <img class="gif" src="" alt="">
+                </div>
+                <form class="form">
+                <input class="pesquisar" type="search" name="pesquisar" id="pesquisar" placeholder="digite o nome ou o ID" required>
+            </form>
+            </div>
+
+            <div class="abas" id="baixo" onclick="abrirFechar(this)">
+            <button class="btn" >CLIQUE AQUI</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
